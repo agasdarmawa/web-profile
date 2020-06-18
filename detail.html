@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title id="detailTitle">Detail Website</title>
+	<link rel="icon" href="img/icon-header.png">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/plugin/slick.css">
+	<link rel="stylesheet" href="css/plugin/slick-theme.css">
+	<link rel="stylesheet" href="css/plugin/toastr.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="proxima_nova/stylesheet.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/plugin/aos.css">
+	<link rel="stylesheet" href="css/detail-website.css">
+	
+</head>
+<body>
+
+
+    <div class="bg-header-menu bg-header-menu-detail">
+		<ul class="logo">
+			<li><a class="proxima-bold" href="index.html">PAD</a></li>
+			<!-- <li>PAD</li> -->
+        </ul>
+        
+        <ul class="hamburger">
+			<li>
+				<div class="hamburger-menu" onclick="openSidebarMenu()">
+					<span class="span-bars-1"></span>
+					<span class="span-bars-2"></span>
+					<span class="span-bars-3"></span>
+				</div>
+			</li>
+		</ul>
+	</div> <!-- /bg-header-menu -->
+	
+
+
+	<section class="bg-screen-menu">
+
+    	<div class="header-screen-menu">
+    		<ul class="logo">
+    			<li> <a href="index.html"><img src="img/icon-header.png" alt=""> <h3 class="proxima-bold">PAD</h3></a> </li>
+    		</ul>
+
+    		<ul class="close-nav">
+    			<li>
+    				<svg onclick="closeSidebarMenu()" id="baseline-clear-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					  <path id="Path_926" data-name="Path 926" d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"/>
+					  <path id="Path_927" data-name="Path 927" d="M0,0H24V24H0Z" fill="none"/>
+					</svg>
+    			</li>
+    		</ul>
+    	</div>
+
+    	<div class="preview-hover">
+			<h1 class="proxima-bold heading-show-links-preview"></h1>	
+		</div>
+
+    	<div class="list-nav-menu">
+    		
+    		<ul class="menu">
+    			<li><a href="#" data-text="Pendidikan" class="proxima-bold preview-links">Pendidikan</a></li>
+    			<li><a href="#" data-text="Karir" class="proxima-bold preview-links">Karir</a></li>
+    			<li><a href="#" data-text="Galeri" class="proxima-bold preview-links">Galeri</a></li>
+    		</ul>
+
+    	</div>
+
+    	<div class="screen-copyright">
+    		<p>&copy; Copyright <span class="yearCopyright"></span> | Putu Agas Darmawa</p>
+    	</div>
+
+    </section> <!-- /bg-screen -->
+
+
+
+
+
+
+
+
+    <div class="bg-banner bg-banner-detail">
+    	
+    	<div class="banner-text">
+    		<h2 class="proxima-bold">Halaman Detail Website</h2>
+    		<h4 class="proxima"><span class="webName">Nama Web</span></h4>
+    	</div>
+
+    </div> <!-- /bg-banner -->
+
+
+    <section class="bg-content-detail">
+
+    	<div class="img-prev"  data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-center" data-aos-delay="1000">
+
+			<div class="box-img-preview"></div>
+
+		</div>
+
+    	<div class="sect-details-web" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-center" data-aos-delay="400">
+    		
+    		<div class="web-title">
+    			<h3 class="proxima-bold webName">Nama Web</h3>
+    			<span id="webTitle">Deskripsi</span>
+    		</div>
+
+    		<div class="web-links">
+				<input type="text" readonly style="z-index: -1;" class="copy-text" value="">
+    			<div class="btn-action btn-copy btn-1" title="Salin alamat web" onclick="copyURL()">
+    				<i class="fa fa-copy"></i>
+				</div>
+				
+				<!-- <div class="tooltips">
+					<span class="proxima-semi">Salin URL Web</span>
+				</div> -->
+
+    			<a title="Kunjungi Web" id="webHrefLink">
+    				<div class="btn-action btn-2">
+    					<i class="fa fa-globe"></i>
+    				</div>
+    			</a>
+    		</div>
+
+    	</div> <!-- /sect-details-web -->
+
+    	<hr data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+
+
+    	<h3 class="head-title proxima-bold" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="1000">Deskripsi</h3>
+    	
+    	<div class="text" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="1400">
+
+			<p id="webDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+		</div>
+
+
+			<h3 class="head-title proxima-bold" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="1900">Bahasa Digunakan</h3>
+			<ul id="webLang" class="language tech-list" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="2200">
+				
+				
+			</ul>
+
+
+
+    	<h3 class="head-title proxima-bold" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="2300">Tools</h3>
+    	<ul id="webTools" class="tools tech-list" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="2700">
+    		
+    	</ul>
+
+    </section> <!-- /bg-content-detail -->
+
+
+
+
+
+    <footer>
+		<h3 class="proxima-bold">&copy; Copyright <span class="proxima-bold yearCopyright"></span> | <span class="proxima-bold name">Putu Agas Darmawa</span></h3>
+		
+		<ul>
+			<li><a href="https://www.instagram.com/agasdarmawa04/" class="icon-big"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://www.facebook.com/agas.darmawa" style="top: 2px;"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="https://api.whatsapp.com/send?phone=6281216859542&text=Hai%20Agas%2c%20Salam%20kenal%20yah%3a%29" class="icon-big"><i class="fab fa-whatsapp"></i></a></li>
+			<li><a href="https://www.youtube.com/channel/UCzByVgbmDV1cttGkuKOyYPA" class="icon-big"><i class="fab fa-youtube"></i></a></li>
+			<li><a href="https://dribbble.com/agasdarmawa" style="top: 3px;"><i class="fab fa-dribbble"></i></a></li>
+		</ul>
+    </footer>
+
+
+
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/plugin/slick.min.js"></script>
+	<script src="js/plugin/toastr.min.js"></script>
+	<script src="js/plugin/TweenMax.min.js"></script>
+    <script src="js/plugin/aos.js"></script>
+	<script src="js/controller.js"></script>
+	
+
+</body>
+</html>
