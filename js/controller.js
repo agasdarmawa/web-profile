@@ -23,15 +23,12 @@ $(window).on('load', function(){
         detailDesktopHeaderMotion();
     } else{
         headerMobileAnimation();
-
-	    
-	if(checkHeight <= 700){
-            $('.banner-text').css({'margin-top':'-30px'})
-        } else if(checkHeight > 700){
-            $('.banner-text').css({'margin-top':'-100px'})
-// 		$('.banner-text').css({'transform':'translateY(-100px)'})
+        
+        if(checkHeight <= 660){
+            $('.banner-text').css({'transform':'translateY(0px)'})
+        } else if(checkHeight > 660){
+            $('.banner-text').css({'transform':'translateY(-70px)'})
         }
-   
 
         // detail.html
         detailMobileHeaderMotion();
@@ -110,6 +107,8 @@ function headerMobileAnimation(){
     setTimeout(() => {
         TweenMax.to('.banner-img', 1.3, {height: '45vh', scaleY: 1, opacity:1,ease: Circ.easeOut})
         TweenMax.to('.banner-img .img-box',1.3, {x:'-50%', top: '50%',left: '50%',delay:1.5,width: '82%', scaleX: 1, opacity:1,ease: Circ.easeOut})
+        // .banner-text{padding: 1em 2em 0 2em; height: auto;}
+        
 
         // Text
         TweenMax.to('.banner-text h4',1, {delay:0, y:0, opacity:1, ease: Circ.easeOut})
@@ -263,6 +262,7 @@ function detailMobileHeaderMotion(){
 
             TweenMax.to('.header-screen-menu',1, {y:0,delay:1,opacity:1,visibility: 'visible',ease: Circ.easeOut});
             TweenMax.to('.list-nav-menu',1, {opacity:1,visibility: 'visible'});
+
             TweenMax.to('.list-nav-menu ul.menu li:nth-child(1)',0.6, {y:0,delay:1.2,opacity:1,visibility: 'visible'});
             TweenMax.to('.list-nav-menu ul.menu li:nth-child(2)',0.6, {y:0,delay:1.3,opacity:1,visibility: 'visible'});
             TweenMax.to('.list-nav-menu ul.menu li:nth-child(3)',0.6, {y:0,delay:1.4,opacity:1,visibility: 'visible'});
@@ -282,6 +282,7 @@ function detailMobileHeaderMotion(){
 
             TweenMax.to('.header-screen-menu',1, {y:'-10px',opacity:0,visibility: 'hidden'});
             TweenMax.to('.list-nav-menu',1, {opacity:0,visibility: 'hidden'});
+
             TweenMax.to('.screen-copyright',0.6, {y:'20px',delay:0.2,visibility: 'hidden',opacity:0});
 
             TweenMax.to('.list-nav-menu ul.menu li:nth-child(1)',0.6, {y:'-15px',delay:0.4,opacity:0,visibility: 'hidden'});
@@ -291,7 +292,7 @@ function detailMobileHeaderMotion(){
 
 
         $('.preview-links').on('mouseenter', function(e){
-            // console.log(e.target.innerText)
+            console.log(e.target.innerText)
             TweenMax.to('.preview-hover h1',.5,{y:0,opacity:.5});
             // $('.preview-hover h1').addClass('showed')
             $('.heading-show-links-preview').html(e.target.innerText);
@@ -316,17 +317,6 @@ function detailMobileHeaderMotion(){
 
             e.preventDefault()
         })
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -376,6 +366,18 @@ function detailMobileHeaderMotion(){
                 langUsed: 'html-css-js',
                 tools: 'sublime-vscode-xd-ps',
                 description: 'Crafter adalah sebuah website yang dibuat untuk Lomba INVENTION Web Design 2019 dimana pada babak penyisihan diadakan secara online pada Maret 2019 dan jika lolos maka finalnya diselenggarakan di Universitas Udayana Jimbaran pada April 2019 secara offline dan web ini berhasil lolos ke babak final. Tema yang diangkat adalah E-Commerce Kerajinan Tangan. Jadi, saya memilih produk kerajinan seperti furniture, baju, gelang dan lain-lain sebagai konten web ini.',
+                public: true
+            },
+
+            {
+                id:5,
+                name: 'BaliNey',
+                title: 'Web Dicoding Submission',
+                link: 'https://agasdarmawa.github.io/baliney/',
+                image: 'baliney.jpg',
+                langUsed: 'html-css-js',
+                tools: 'sublime-vscode-ps',
+                description: 'Dicoding, merupakan sebuah program yang berjalan dalam bidang pengembangan aplikasi, serta memiliki banyak kelas "Dicoding Academy", dan dapat dipelajari dengan system pembelajaran online. Dari tingkat keahlian, tersedia kelas bagi peserta yang dengan kemampuan programming pemula (beginner), pertengahan, hingga mahir (advance atau expert). Dicoding menyediakan dua jenis sertifikat yaitu Sertifikat Keikutsertaan dan Sertifikat Kelulusan. Developer akan mendapatkan Sertifikat Keikutsertaan apabila hadir dalam salah satu event yang Dicoding adakan. Peserta mendapat sertifikat kelulusan setelah menyelesaikan dan lulus dari tugas (submission) akhir dengan baik. Web ini adalah submission dari kelas Dasar Pemrograman Web.',
                 public: true
             }
         ];
@@ -498,7 +500,7 @@ function detailMobileHeaderMotion(){
 
 
         // detail.html
-        function copyURL(e){
+        function copyURL(){
 			let copyText = document.querySelector('.copy-text')
 			
 			// Select the text field
@@ -508,7 +510,6 @@ function detailMobileHeaderMotion(){
 
 			// Copy the text inside the text field
 			document.execCommand('copy')
-		e.preventDefault();
 		}
 
 		let checkCopied;
@@ -521,3 +522,10 @@ function detailMobileHeaderMotion(){
 			}
 		});
 
+
+        // set box-project img poster
+		$.each($('.box-project'), (index, elems) =>{
+			$(`.box-project:nth-child(${index+1}) .project-img`).css({
+				'background-image':`url(img/portfolio/${dataWeb[index].image})`
+			})
+		})

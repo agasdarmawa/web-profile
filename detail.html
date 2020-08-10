@@ -28,13 +28,12 @@
         </ul>
         
         <ul class="hamburger">
-			<li>
-				<div class="hamburger-menu" onclick="openSidebarMenu()">
-					<span class="span-bars-1"></span>
-					<span class="span-bars-2"></span>
-					<span class="span-bars-3"></span>
-				</div>
-			</li>
+			<div class="hamburger-menu" onclick="openSidebarMenu()">
+				<input type="checkbox" name="">
+				<span class="span-bars-1"></span>
+				<span class="span-bars-2"></span>
+				<span class="span-bars-3"></span>
+			</div>
 		</ul>
 	</div> <!-- /bg-header-menu -->
 	
@@ -55,9 +54,9 @@
 					</svg>
     			</li>
     		</ul>
-    	</div>
-
-    	<div class="preview-hover">
+		</div>
+		
+		<div class="preview-hover">
 			<h1 class="proxima-bold heading-show-links-preview"></h1>	
 		</div>
 
@@ -110,7 +109,7 @@
     		</div>
 
     		<div class="web-links">
-				<input type="text" readonly style="z-index: -1;" class="copy-text" value="">
+				<input type="text" style="z-index: -1;" class="copy-text" value="">
     			<div class="btn-action btn-copy btn-1" title="Salin alamat web" onclick="copyURL()">
     				<i class="fa fa-copy"></i>
 				</div>
@@ -119,7 +118,7 @@
 					<span class="proxima-semi">Salin URL Web</span>
 				</div> -->
 
-    			<a title="Kunjungi Web" id="webHrefLink">
+    			<a title="Kunjungi Web" target="_blank" id="webHrefLink">
     				<div class="btn-action btn-2">
     					<i class="fa fa-globe"></i>
     				</div>
@@ -128,34 +127,29 @@
 
     	</div> <!-- /sect-details-web -->
 
-    	<hr data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+    	<hr data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-center" data-aos-delay="400">
 
 
-    	<h3 class="head-title proxima-bold" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="1000">Deskripsi</h3>
+    	<h3 class="head-title proxima-bold" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-center" data-aos-delay="1500">Deskripsi</h3>
     	
-    	<div class="text" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="1400">
+    	<div class="text" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-center" data-aos-delay="1900">
 
-			<p id="webDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p id="webDesc"></p>
 
 
 		</div>
 
 
-			<h3 class="head-title proxima-bold" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="1900">Bahasa Digunakan</h3>
-			<ul id="webLang" class="language tech-list" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="2200">
+			<h3 class="head-title proxima-bold" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-center" data-aos-delay="2000">Bahasa Digunakan</h3>
+			<ul id="webLang" class="language tech-list" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-center" data-aos-delay="2400">
 				
 				
 			</ul>
 
 
 
-    	<h3 class="head-title proxima-bold" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="2300">Tools</h3>
-    	<ul id="webTools" class="tools tech-list" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-aos-delay="2700">
+    	<h3 class="head-title proxima-bold" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-center" data-aos-delay="2500">Tools</h3>
+    	<ul id="webTools" class="tools tech-list" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-center" data-aos-delay="3000">
     		
     	</ul>
 
@@ -169,11 +163,11 @@
 		<h3 class="proxima-bold">&copy; Copyright <span class="proxima-bold yearCopyright"></span> | <span class="proxima-bold name">Putu Agas Darmawa</span></h3>
 		
 		<ul>
-			<li><a href="https://www.instagram.com/agasdarmawa04/" class="icon-big"><i class="fab fa-instagram"></i></a></li>
-			<li><a href="https://www.facebook.com/agas.darmawa" style="top: 2px;"><i class="fab fa-facebook-f"></i></a></li>
-			<li><a href="https://api.whatsapp.com/send?phone=6281216859542&text=Hai%20Agas%2c%20Salam%20kenal%20yah%3a%29" class="icon-big"><i class="fab fa-whatsapp"></i></a></li>
-			<li><a href="https://www.youtube.com/channel/UCzByVgbmDV1cttGkuKOyYPA" class="icon-big"><i class="fab fa-youtube"></i></a></li>
-			<li><a href="https://dribbble.com/agasdarmawa" style="top: 3px;"><i class="fab fa-dribbble"></i></a></li>
+			<li><a target="_blank" href="https://www.instagram.com/agasdarmawa04/" class="icon-big"><i class="fab fa-instagram"></i></a></li>
+			<li><a target="_blank" href="https://www.facebook.com/agas.darmawa" style="top: 2px;"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a target="_blank" href="https://api.whatsapp.com/send?phone=6281216859542&text=Hai%20Agas%2c%20Salam%20kenal%20yah%3a%29" class="icon-big"><i class="fab fa-whatsapp"></i></a></li>
+			<li><a target="_blank" href="https://www.youtube.com/channel/UCzByVgbmDV1cttGkuKOyYPA" class="icon-big"><i class="fab fa-youtube"></i></a></li>
+			<li><a target="_blank" href="https://dribbble.com/agasdarmawa" style="top: 3px;"><i class="fab fa-dribbble"></i></a></li>
 		</ul>
     </footer>
 
@@ -186,7 +180,7 @@
 	<script src="js/plugin/TweenMax.min.js"></script>
     <script src="js/plugin/aos.js"></script>
 	<script src="js/controller.js"></script>
-	
+
 
 </body>
 </html>

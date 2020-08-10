@@ -64,7 +64,7 @@
 
 .list-nav-menu{
 	width: 100%;
-/* 	height: auto; */
+	height: auto;
 	height: 70vh;
 	 /*background-color: #fff;*/
 	/* background-color: #b013; */
@@ -75,8 +75,9 @@
 	align-items: center;
 	text-align: center;
 	z-index: 5;
-	opacity:0;
-	visibility:hidden;
+	opacity: 0;
+	visibility: hidden;
+	
 }
 
 
