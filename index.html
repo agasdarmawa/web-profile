@@ -355,138 +355,11 @@ Icons by https://www.flaticon.com/
 		
 		<div class="anim" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="center-bottom" data-aos-delay="500">
 
-			<div class="bg-testimonials testimonials">
+			<div class="bg-testimonials testimonials" id="sliderTesti">
 
-				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
-					<div>
-	
-						<div class="testi-ctn">
-							<p>Hasil kerjanya sangat memuaskan dan melebihi ekspetasi saya. Saya berharap dapat bekerja sama dengan anda lagi kedepannya.</p>
-						</div> <!-- /testi-ctn -->
-	
-						<div class="testi-profile">
-	
-							<!-- <div class="img-prf"><img src="img/testimoni/original/mankz.jpg" alt=""></div> -->
-							<div class="img-prf"><img src="img/testimoni/avatar/mankz.jpg" alt=""></div>
-
-							
-							<div class="prf-text">
-								<h3 class="proxima-bold">Komang Krisnanda</h3>
-								<!-- <h3 class="proxima-bold">Gita Krisnanda</h3> -->
-								<span>Web Developer</span>
-							</div>
-	
-	
-						</div> <!-- /testi-profile -->
-	
-					</div>
-				</div> <!-- /box-testi slick-slide -->
-
-				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
-					<div>
-	
-						<div class="testi-ctn">
-							<p>Komunikasinya bagus, tugas yang dikerjakan selalu sesuai deadline dan hasilnya pun memuaskan. Pokoknya rekomen banget deh.</p>
-						</div> <!-- /testi-ctn -->
-	
-						<div class="testi-profile">
-	
-							<!-- <div class="img-prf"><img src="img/testimoni/original/nindya2.jpg" alt=""></div> -->
-							<div class="img-prf"><img src="img/testimoni/avatar/nindya.jpg" alt=""></div>
-
-							<div class="prf-text">
-								<h3 class="proxima-bold">Anindya Pramadevi</h3>
-								<!-- <h3 class="proxima-bold">Nindya Paramadewi</h3> -->
-								<span>Musisi Bali</span>
-							</div>
-	
-	
-						</div> <!-- /testi-profile -->
-	
-					</div>
-				</div> <!-- /box-testi slick-slide -->
-
-				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
-					<div>
-	
-						<div class="testi-ctn">
-							<p>Sudah 2 tahun menjadi client, Agas ini orangnya baik, rajin, ramah dan bisa diandalkan. Hasil kerjanya pun keren dan memuaskan.</p>
-						</div> <!-- /testi-ctn -->
-	
-						<div class="testi-profile">
-	
-							<!-- <div class="img-prf"><img src="img/testimoni/original/dayu3.jpg" alt=""></div> -->
-							<div class="img-prf"><img src="img/testimoni/avatar/dayu.jpg" alt=""></div>
-
-							<div class="prf-text">
-								<h3 class="proxima-bold">Amrita Pancajania</h3>
-								<!-- <h3 class="proxima-bold">Rita Pancaswari</h3> -->
-								<span>Model</span>
-							</div>
-	
-	
-						</div> <!-- /testi-profile -->
-	
-					</div>
-				</div> <!-- /box-testi slick-slide -->
-	
-
-				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
-					<div>
-	
-						<div class="testi-ctn">
-							<p>Partner kerja yang mantul dah ini. Kalau ada tugas pasti langsung dikerjakan dan hasil design nya juga bagus dan rapi. Senang bisa bekerja bareng dengan Agas.</p>
-						</div> <!-- /testi-ctn -->
-	
-						<div class="testi-profile">
-	
-							<!-- <div class="img-prf"><img src="img/testimoni/original/jeremy.jpg" alt=""></div> -->
-							<div class="img-prf"><img src="img/testimoni/avatar/jeremy.jpg" alt=""></div>
-
-							<div class="prf-text">
-								<h3 class="proxima-bold">Jeremy Subekti</h3>
-								<!-- <h3 class="proxima-bold">Jeremy Edward</h3> -->
-								<span>Photographer</span>
-							</div>
-	
-	
-						</div> <!-- /testi-profile -->
-	
-					</div>
-				</div> <!-- /box-testi slick-slide -->
-	
-
-				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
-					<div>
-	
-						<div class="testi-ctn">
-							<p>Selama bekerja bareng dengan Agas, hasil kerjanya bagus dan ide-ide yang dia punya cukup kreatif. Partner kerja yang mantap lah pokoknya ini.</p>
-						</div> <!-- /testi-ctn -->
-	
-						<div class="testi-profile">
-	
-							<!-- <div class="img-prf"><img src="img/testimoni/original/titah.jpg" alt=""></div> -->
-							<div class="img-prf"><img src="img/testimoni/avatar/titah.jpg" alt=""></div>
-
-							<div class="prf-text">
-								<h3 class="proxima-bold">Titah Anamika</h3>
-								<!-- <h3 class="proxima-bold">Titah Ekayasa</h3> -->
-								<span>Videographer</span>
-							</div>
-	
-	
-						</div> <!-- /testi-profile -->
-	
-					</div>
-				</div> <!-- /box-testi slick-slide -->
-
-	
 			</div> <!-- /bg-testimonials -->
 
 		</div>
-		
-		
-
 
     </section> <!-- /bg-testi -->
 
@@ -520,5 +393,12 @@ Icons by https://www.flaticon.com/
 
 	<script src="js/controller.js"></script>
 
+    <script>
+		$.each($('.box-project'), (index, elems) =>{
+			$(`.box-project:nth-child(${index+1}) .project-img`).css({
+				'background-image':`url(img/portfolio/${dataWeb[index].image})`
+			})
+		})
+    </script>
 </body>
 </html>
