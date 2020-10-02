@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Baliku - Slick</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="css/plugin/slick.css">
+	<link rel="stylesheet" href="css/plugin/slick-theme.css">
+	<link rel="stylesheet" href="css/flickity.css">
+	<link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/custom.css">
+	
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+		@media (max-width: 576px){
+			.testi-box{padding: 20px 60px;}
+			.bg-offers h2{font-size: 1.8em; font-weight: 800;}
+			.bg-offers p{margin-bottom: 40px; font-size: .85em}
+		}
+
+		 @media (min-width: 576px) {
+		    .testimonials .slick-prev, .testimonials .slick-next {
+		      display: block !important; } }
+	</style>
+</head>
+<body>
+
+	<div class="bg-menu" id="bg-menu">
+		<ul class="logo">
+			<li><a href="">Baliku</a></li>
+		</ul>
+
+		<ul class="menu">
+			<li><a href="">Home</a></li>
+			<li><a href="">Packages</a></li>
+			<li><a href="">Services</a></li>
+			<li><a href="">Testimonials</a></li>
+			<li class="cta-menu">
+				<button class="btn-cta1">Sign Up</button>
+				<button class="btn-cta2">Sign In</button>
+            </li>
+            <li class="toggle-menu">
+
+               		<svg onclick="openMenu()" id="baseline-dehaze-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path id="Path_1576" data-name="Path 1576" d="M2,15.5v2H22v-2Zm0-5v2H22v-2Zm0-5v2H22v-2Z"/>
+                    <path id="Path_1577" data-name="Path 1577" d="M0,0H24V24H0Z" fill="none"/>
+                  </svg>
+
+            </li>
+		</ul>
+
+	</div> <!-- /bg-menu -->
+
+
+	<div class="bg-menu-app">
+		<div class="header-app">
+			<ul class="logo">
+				<li><a href="">Baliku</a></li>
+			</ul>
+
+			<ul class="exit-toggle">
+				<div class="btn-close" onclick="closeMenu()">
+					<svg id="baseline-clear-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					  <path id="Path_926" data-name="Path 926" d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"/>
+					  <path id="Path_927" data-name="Path 927" d="M0,0H24V24H0Z" fill="none"/>
+					</svg>
+				</div>
+			</ul>
+		</div> <!-- /header-app -->
+
+
+		<div class="menu-list">
+			<ul class="menu">
+				<li><a href="">Home</a></li>
+				<li><a href="">Packages</a></li>
+				<li><a href="">Services</a></li>
+				<li><a href="">Testimonials</a></li>
+				<li style="margin-bottom: 10px"><button class="btn1">Sign Up</button></li>
+            	<li><button class="btn2">Sign In</button></li>
+			</ul>
+		</div>
+
+
+
+	</div> <!-- /bg-menu-app -->
+
+
+
+    
+	<section class="bg-header">
+		
+        <!-- <video autoplay loop muted>
+            <source src="video/banner.mp4" type="video/mp4">
+        </video> -->
+
+        <div class="banner-txt">
+        	<h3 class="title-header" id="header-banner-text">We serve you a better <br>services and quality of your trip</h3>
+
+        	<p id="para-header-banner">Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> sed do eiusmod
+            tempor incididunt ut labore</p>
+            <button>See Details</button>
+        </div>
+
+    </section>
+    
+
+
+    <div class="container bg-offers">
+        <div class="row">
+
+            <div class="col-lg-12 col-xs-10">
+                <h2 class="title-header">Popular Trip</h2>
+                <p id="para-offers-title"></p>
+
+                <div class="row">
+
+                	<div class="col-lg-3 col-md-6 col-sm-12 box">
+	                   <div class="box-trip">
+	                       <img src="images/kelingking.jpg">
+
+	                       <div class="trip-desc">
+	                       		<h3 class="title-header">Pantai Kelingking</h3>
+	                       		<h6>Klungkung</h6>
+	                       </div>
+
+	                       <div class="trip-btn-action">
+	                       		<button>Book Now</button>
+	                       </div>
+	                   </div> <!-- /box-trip -->
+	                </div> <!-- /col-lg-3 -->
+
+
+	                <div class="col-lg-3 col-md-6 col-sm-12 box">
+	                   <div class="box-trip">
+	                       <img src="images/campuhan.jpg">
+
+	                       <div class="trip-desc">
+	                       		<h3 class="title-header">Bukit Campuhan</h3>
+	                       		<h6>Gianyar</h6>
+	                       </div>
+
+	                       <div class="trip-btn-action">
+	                       		<button>Book Now</button>
+	                       </div>
+	                   </div> <!-- /box-trip -->
+	                </div> <!-- /col-lg-3 -->
+
+	                <div class="col-lg-3 col-md-6 col-sm-12 box">
+	                   <div class="box-trip">
+	                       <img src="images/ulundanu.jpg">
+
+	                       <div class="trip-desc">
+	                       		<h3 class="title-header">Pura Ulundanu</h3>
+	                       		<h6>Bedugul</h6>
+	                       </div>
+
+	                       <div class="trip-btn-action">
+	                       		<button>Book Now</button>
+	                       </div>
+	                   </div> <!-- /box-trip -->
+	                </div> <!-- /col-lg-3 -->
+
+
+	                <div class="col-lg-3 col-md-6 col-sm-12 box">
+	                   <div class="box-trip">
+	                       <img src="images/tanahlot.jpg">
+
+	                       <div class="trip-desc">
+	                       		<h3 class="title-header">Tanah Lot</h3>
+	                       		<h6>Tabanan</h6>
+	                       </div>
+
+	                       <div class="trip-btn-action">
+	                       		<button>Book Now</button>
+	                       </div>
+	                   </div> <!-- /box-trip -->
+	                </div> <!-- /col-lg-3 -->
+
+                </div> <!-- /row -->
+
+
+            </div> <!-- /col-lg-12 -->
+
+
+            <div class="col-lg-12 bg-offers-all-btn">
+            	<button class="col-lg-3">See All Destination</button>
+            </div>
+
+        </div> <!-- /row -->
+    </div> <!-- /container bg-offers -->
+
+
+
+
+    <section class="bg-parallax">
+    	
+    	<div class="container">
+			<div class="row">
+
+				<div class="col-lg-12 text">
+					<h3 class="title-header">Why choose Bali?</h3>
+					<hr>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="para-exc">
+
+						<img src="images/icon/user.svg" alt="">
+						
+						<h3 class="title-header">Friendly People</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore.</p>
+
+					</div> <!-- /para-exc -->
+				</div> <!-- /col-lg-3 -->
+
+
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="para-exc">
+
+						<img src="images/icon/like.svg" alt="">
+						
+						<h3 class="title-header">Recomended</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore.</p>
+
+					</div> <!-- /para-exc -->
+				</div> <!-- /col-lg-3 -->
+
+
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="para-exc">
+
+						<img src="images/icon/trip.svg" alt="">
+						
+						<h3 class="title-header">Popular Destination</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore.</p>
+
+					</div> <!-- /para-exc -->
+				</div> <!-- /col-lg-3 -->
+
+
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="para-exc">
+
+						<img src="images/icon/camera.svg" alt="">
+						
+						<h3 class="title-header">Instagramable</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore.</p>
+
+					</div> <!-- /para-exc -->
+				</div> <!-- /col-lg-3 -->
+
+
+
+
+
+			</div> <!-- /row -->
+		</div> <!-- /container -->
+
+
+    </section> <!-- /bg-parallax -->
+
+
+
+
+
+    <section class="bg-testi">
+
+
+    	<div class="col-lg-12 testi-header">
+			<h3 class="title-header">Clients Testimony</h3>
+    	<p id="para-testi-header"></p>
+		</div>
+    	
+
+    	
+    	<div class="container container-testi">
+
+    		<img src="images/quotes.svg" alt="" class="quotes top">
+
+    		<img src="images/quotes.svg" alt="" class="quotes bottom">
+
+    		
+    	</div> <!-- /container -->
+
+
+    	<div class="bg-testimonials testimonials">
+				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
+
+						<div>
+							
+							<div class="head-profile-testi">
+								<img src="images/testi/mankz.jpg" class="img-testi-profile">
+								<h3 class="title-header">Komang Krisnanda </h3>
+								<h6>Web Developer</h6>
+							</div>
+
+							<ul>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  	</ul>
+
+
+							<div class="testi-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+
+						</div>
+
+				</div> <!-- /col-lg-4 slick-slide -->
+
+
+				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
+
+						<div>
+							
+							<div class="head-profile-testi">
+								<img src="images/testi/jeremy.jpg" class="img-testi-profile">
+								<h3 class="title-header">Jeremy Subekti</h3>
+								<h6>Graphic Designer</h6>
+							</div>
+
+							<ul>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  	</ul>
+
+
+							<div class="testi-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						  		tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+
+						</div>
+
+				</div> <!-- /col-lg-4 slick-slide -->
+
+
+
+				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
+
+						<div>
+							
+							<div class="head-profile-testi">
+								<img src="images/testi/dayu3.jpg" class="img-testi-profile">
+								<h3 class="title-header">Dayu Amrita</h3>
+								<h6>Model</h6>
+							</div>
+
+							<ul>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  	</ul>
+
+
+							<div class="testi-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							</div>
+
+						</div>
+
+				</div> <!-- /col-lg-4 slick-slide -->
+
+
+				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
+
+						<div>
+							
+							<div class="head-profile-testi">
+								<img src="images/testi/rani2.png" class="img-testi-profile">
+
+								<!-- <img src="images/testi/rani.jpg" class="img-testi-profile"> -->
+								<h3 class="title-header">Rani Prabaswari</h3>
+								<h6>Web Developer</h6>
+							</div>
+
+							<ul>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  	</ul>
+
+
+							<div class="testi-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						  		tempor incididunt ut labore.</p>
+							</div>
+
+						</div>
+
+				</div> <!-- /col-lg-4 slick-slide -->
+
+
+				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
+
+						<div>
+							
+							<div class="head-profile-testi">
+								<img src="images/testi/nindya2.jpg" class="img-testi-profile">
+
+								<!-- <img src="images/testi/nindya.jpg" class="img-testi-profile"> -->
+								<h3 class="title-header">Anindya Pramadevi</h3>
+								<h6>Balinese Musician</h6>
+							</div>
+
+							<ul>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  	</ul>
+
+
+							<div class="testi-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						  		tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+
+						</div>
+
+				</div> <!-- /col-lg-4 slick-slide -->
+
+
+
+				<div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
+
+						<div>
+							
+							<div class="head-profile-testi">
+								<img src="images/testi/kristina3.jpg" class="img-testi-profile">
+								<h3 class="title-header">Kristina Putri</h3>
+								<h6>Balinese Dancer</h6>
+							</div>
+
+							<ul>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  		<li><i class="fa fa-star"></i></li>
+						  	</ul>
+
+
+							<div class="testi-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						  		tempor.</p>
+							</div>
+
+						</div>
+
+				</div> <!-- /col-lg-4 slick-slide -->
+
+			
+
+		</div> <!-- /bg-testimonials -->
+
+
+    </section> <!-- /bg-news -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="bg-footer">
+
+    	<div class="container">
+	    	<div class="row footer-ctn">
+	    		
+	    		<div class="col-lg-4 col-md-6 box-footer">
+	    			<h3 class="title-header">About Us</h3>
+	    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    			tempor incididunt ut labore et dolore magna aliqua.</p>
+
+	    			<ul class="sosmed">
+	    				<li><a href=""><i class="fab fa-instagram"></i></a></li>
+	    				<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+	    				<li><a href=""><i class="fab fa-twitter"></i></a></li>
+	    				<li><a href=""><i class="fab fa-youtube"></i></a></li>
+	    			</ul>
+	    		</div>
+
+	    		<div class="col-lg-3 col-md-6 box-footer">
+	    			<h3 class="title-header">Account</h3>
+
+	    			<ul class="account">
+	    				<li><a href="">Bookmarks</a></li>
+	    				<li><a href="">Favorite</a></li>
+	    				<li><a href="">Booked List</a></li>
+	    				<li><a href="">Terms & Condition</a></li>
+	    				<li><a href="">Policy</a></li>
+	    			</ul>
+	    		</div>
+
+	    		<div class="col-lg-3 col-md-6 box-footer">
+	    			<h3 class="title-header">Services</h3>
+
+	    			<ul class="account">
+	    				<li><a href="">Call Center</a></li>
+	    				<li><a href="">Online Chat</a></li>
+	    				<li><a href="">24 Hours Support</a></li>
+	    			</ul>
+	    		</div>
+
+	    		<div class="col-lg-2 col-md-6 box-footer">
+	    			<h3 class="title-header">Support</h3>
+
+	    			<ul class="account">
+	    				<li><a href="">Blog</a></li>
+	    				<li><a href="">Contact</a></li>
+	    				<li><a href="">Call Center</a></li>
+	    			</ul>
+	    		</div>
+
+	    		
+	    	</div> <!-- /row -->
+
+
+	    	<div class="footer-credit justify-content-center">
+	    		<p>&copy; <span id="year"></span> Putu Agas Darmawa | All rights reserved</p>
+	    	</div>
+
+	    </div> <!-- /container -->
+
+    </section> <!-- /bg-footer -->
+
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
+	<script src="js/plugin/flickity.pkgd.min.js"></script>
+	
+
+    <script>
+        let year;
+        let date = new Date;
+        year = date.getFullYear()
+        $('#year').html(year)
+
+
+        $(document).ready(function(){
+		      $('.bg-testimonials').slick({
+		      	dots: true,
+	            infinite: true,
+	            speed: 300,
+	            centerMode: true,
+				autoplay: true,
+	            slidesToShow: 1,
+	            adaptiveHeight: true,
+	            variableWidth: true
+		      });
+		    });
+
+
+  //       $('.main-carousel').flickity({
+		//   cellAlign: 'left',
+		//   contain: true,
+		//   prevNextButtons: false
+		// });
+
+
+		console.log($(document).width())
+
+		let checkScreenWidth = $(document).width()
+
+		if(checkScreenWidth <= 400){
+			$('#para-testi-header').html(`Lorem ipsum dolor sit amet, consectetur adipisicing elit tempor incididunt ut labore et dolore magna aliqua.`)
+
+			$('#para-offers-title').html(`Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
+                tempor incididunt ut labore.`);
+
+			$('#header-banner-text').html(`We serve you a better services and quality of your trip`);
+
+			$('#para-header-banner').html(`Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
+            tempor incididunt ut labore`);
+		} 
+		
+		else{
+			$('#para-testi-header').html(`Lorem ipsum dolor sit amet, consectetur adipisicing elit <br>
+    		tempor incididunt ut labore et dolore magna aliqua.`)
+
+			$('#para-offers-title').html(`Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> sed do eiusmod
+                tempor incididunt ut labore.`)
+
+			$('#header-banner-text').html(`We serve you a better <br>services and quality of your trip`);
+
+			$('#para-header-banner').html(`Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> sed do eiusmod
+            tempor incididunt ut labore`);
+		}
+        
+
+        $(document).scroll(function(){
+            let scroll = $(window).scrollTop();
+
+            if(scroll > 0){
+                $('#bg-menu').addClass('scrolled')
+                $('#bg-menu ul.logo li a').addClass('scrolled')
+                $('#bg-menu ul.menu li a').addClass('scrolled')
+                $('.btn-cta1').addClass('scrolled')
+                $('.toggle-menu').addClass('scrolled')
+                $('.toggle-menu svg').addClass('scrolled')
+            } 
+            else{
+                $('#bg-menu').removeClass('scrolled')
+                $('#bg-menu ul.logo li a').removeClass('scrolled')
+                $('#bg-menu ul.menu li a').removeClass('scrolled')
+                $('.btn-cta1').removeClass('scrolled')
+                $('.toggle-menu').removeClass('scrolled')
+                $('.toggle-menu svg').removeClass('scrolled')
+            }
+        })
+
+        function openMenu(){
+            $('.bg-menu-app').addClass('actived')
+        }
+
+        function closeMenu(){
+            $('.bg-menu-app').removeClass('actived')
+        }
+    </script>
+
+</body>
+</html>
