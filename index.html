@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BaliNey</title>
+    <!-- all.min.css adalah file css font awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/logo.png">
+</head>
+<body>
+
+    <header class="offset-section" id="home">
+        <section class="bg-banner">
+
+            <div class="banner-text">
+                
+                <h5>Perkenalkan BaliNey</h5>
+                <h2 class="title title-head">Nikmati keindahan panorama Pulau Dewata</h2>
+                <p>Cari tahu informasi tempat wisata di Pulau Bali. Berlangganan sekarang dan dapatkan informasi terbaru dari kami.</p>
+                
+                <div class="btn-wrapper">
+                    <button class="btn1">Daftar Sekarang</button>
+                    <a class="page-scroll" href="#wisata">
+                        <button class="btn2">Lihat Rekomendasi Wisata</button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="banner-img">
+                <img src="assets/images/lempuyang.jpg" alt="">
+            </div>
+
+        </section> <!-- /bg-banner -->
+        
+        
+        <nav class="bg-menu">
+            <ul class="logo">
+                <h3><a class="page-scroll" href="#home">Bali<span>Ney</span> </a></h3>
+                <li class="none-mobile"><a class="nav-link page-scroll nav-desktop active" href="#home">Home</a></li>
+                <li class="none-mobile"><a class="nav-link page-scroll nav-desktop" href="#wisata">Wisata</a></li>
+                <li class="none-mobile"><a class="nav-link page-scroll nav-desktop" href="#keunggulan">Keunggulan</a></li>
+                <li class="none-mobile"><a class="nav-link page-scroll nav-desktop" href="#kontak">Kontak</a></li>
+            </ul>
+
+            <ul class="menu">
+                <li class="none-mobile" style="margin-right: 3px;">
+                    <button class="btn-masuk">Masuk</button>
+                </li>
+
+                <li class="none-mobile">
+                    <button class="btn-daftar">Daftar</button>
+                </li>
+
+                <li class="display-mobile" onclick="openMobileNavigation()">
+                    <i class="fa fa-bars"></i>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="menu-responsive">
+            <div class="header">
+                <h3><a class="page-scroll" href="#home">Bali<span>Ney</span> </a></h3>
+                <i class="fa fa-times" onclick="closeMobileNavigation()"></i>
+            </div>
+
+            <div class="content">
+                <ul>
+                    <li><a class="nav-link page-scroll nav-mobile active" href="#home">Home</a></li>
+                    <li><a class="nav-link page-scroll nav-mobile" href="#wisata">Wisata</a></li>
+                    <li><a class="nav-link page-scroll nav-mobile" href="#keunggulan">Keunggulan</a></li>
+                    <li style="margin-bottom: 40px"><a class="nav-link page-scroll nav-mobile" href="#kontak">Kontak</a></li>
+                    <li>
+                        <button class="btn-masuk">Masuk</button>
+                    </li>
+
+                    <li>
+                        <button class="btn-daftar">Daftar</button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- Header -->
+
+
+
+    <!-- Main -->
+    <main>
+        <div id="content">
+
+            <article class="bg-tourism offset-section wrapper-content" id="wisata">
+                <h4 class="title-small">Wisata Populer</h4>
+                <h2 class="title-head">Beberapa wisata populer di Bali</h2>
+
+                <div class="flex-wrapper wrapper-wisata">
+
+                    <div class="box-wisata">
+                        <img src="assets/images/lempuyang.jpg" alt="">
+
+                        <div class="info-wisata">
+                            <h4>Pura Lempuyang</h4>
+                            <span>Karangasem</span>
+                        </div> <!-- /info-wisata -->
+
+                        <div class="wisata-action">
+                            <button data-name="Pura Lempuyang" onclick="openDetailWisata(this)">Lihat Detail Wisata</button>
+                        </div> <!-- /wisata-action -->
+                    </div> <!-- /box-wisata -->
+
+                    <div class="box-wisata">
+                        <img src="assets/images/campuhan.jpg" alt="">
+
+                        <div class="info-wisata">
+                            <h4>Bukit Campuhan</h4>
+                            <span>Gianyar</span>
+                        </div> <!-- /info-wisata -->
+
+                        <div class="wisata-action">
+                            <button data-name="Bukit Campuhan" onclick="openDetailWisata(this)">Lihat Detail Wisata</button>
+                        </div> <!-- /wisata-action -->
+
+                        
+                    </div> <!-- /box-wisata -->
+
+                    <div class="box-wisata">
+                        <img src="assets/images/kelingking.jpg" alt="">
+
+                        <div class="info-wisata">
+                            <h4>Pantai Kelingking</h4>
+                            <span>Klungkung</span>
+                        </div> <!-- /info-wisata -->
+
+                        <div class="wisata-action">
+                            <button data-name="Pantai Kelingking" onclick="openDetailWisata(this)">Lihat Detail Wisata</button>
+                        </div> <!-- /wisata-action -->
+
+                        
+                    </div> <!-- /box-wisata -->
+
+                    <div class="box-wisata">
+                        <img src="assets/images/ulundanu.jpg" alt="">
+
+                        <div class="info-wisata">
+                            <h4>Pura Ulundanu Beratan</h4>
+                            <span>Bedugul</span>
+                        </div> <!-- /info-wisata -->
+
+                        <div class="wisata-action">
+                            <button data-name="Pura Ulundanu Beratan" onclick="openDetailWisata(this)">Lihat Detail Wisata</button>
+                        </div> <!-- /wisata-action -->
+
+                        
+                    </div> <!-- /box-wisata -->
+
+                    
+                    
+                    
+                </div> <!-- /flex-wrapper -->
+
+                <!-- bg-popup-detail -->
+                <div class="bg-popup-detail">
+                    <img src="assets/images/deco/close.svg" class="close-screen" onclick="closeDetailWisata()" alt="Close Screen">
+                    
+                    <div class="header-content">
+                        
+                        <div class="content-image content-delay">
+
+                            <div class="img-jumbotron">
+                                <img id="imgWisata" alt="">
+                            </div>
+
+                        </div> <!-- /content-image -->
+                        
+
+                        <div class="content-text content-delay">
+                            <h2 id="namaWisata"></h2>
+                            <span class="lokasi" id="lokasiWisata"></span>
+                            <div class="rating-wisata">
+                                <span class="rating" id="totalRating">4.2</span>
+                                <ul>
+                                    <li><i class="fa fa-star icon-rating"></i></li>
+                                    <li><i class="fa fa-star icon-rating"></i></li>
+                                    <li><i class="fa fa-star icon-rating"></i></li>
+                                    <li><i class="fa fa-star icon-rating"></i></li>
+                                    <li><i class="fa fa-star icon-rating"></i></li>
+                                </ul>
+                                <span class="review" id="totalReviews">(490)</span>
+                            </div>
+
+                            <h4 class="head">Detail Wisata</h4>
+                            <ul class="detail-wisata">
+                                
+                            </ul>
+
+                            <p class="desc-wisata" id="descWisata">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero repellat eaque laboriosam maiores? Dolor ipsum, iste cumque distinctio, tenetur consectetur, vitae autem adipisci inventore sequi consequuntur at eveniet corporis?</p>
+
+
+                            <h4 class="head">Lokasi Wisata</h4>
+                            <iframe id="mapWisata" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+                        </div> <!-- /content-text -->
+
+                    </div> <!-- /header-detail -->
+                    
+
+                </div>
+                <!-- bg-popup-detail -->
+
+                <div class="wrapper-more">
+                    <button>Lihat Semua Destinasi</button>
+                </div> <!-- /wrapper-more -->
+                
+
+            </article> <!-- article /bg-wisata -->
+            
+
+            <article class="bg-excellence offset-section wrapper-contents" id="keunggulan">
+
+                <div class="excellence-title"> 
+                    <h2 class="title-head">Kenapa harus berkunjung ke Bali?</h2>
+                </div> <!-- /excellence-title -->
+                
+
+                <div class="excellence-content">
+
+                    <div class="box-exc">
+                        <img src="assets/images/icon/globe.svg" alt="">
+                        <h4>Destinasi Wisata Terbaik Tahun 2020</h4>
+                        <p>Pulau Bali menempati posisi empat besar dari daftar 25 destinasi wisata terbaik dunia versi <a target="_blank" href="https://www.tripadvisor.com/TravelersChoice-Destinations">TripAdvisor</a>.</p>
+                    </div> <!-- /box-exc -->
+                    
+                    
+                    <div class="box-exc">
+                        <img src="assets/images/icon/hotel.svg" alt="">
+                        <h4>Hotel Terbaik di Dunia</h4>
+                        <p>Hotel Capella Ubud meraih peringkat nomor satu pada survei <a target="_blank" href="https://www.travelandleisure.com/worlds-best/hotels-top-100-overall">Travel+Leisure World’s Best Awards</a>.</p>
+                    </div> <!-- /box-exc -->
+
+                    <div class="box-exc">
+                        <img src="assets/images/icon/friendship.svg" alt="">
+                        <h4>Penduduknya Ramah</h4>
+                        <p>Keramahan masyarakat Bali disebut sebagai salah satu penduduk yang paling ramah di Indonesia.</p>
+                    </div> <!-- /box-exc -->
+
+                    <div class="box-exc">
+                        <img src="assets/images/icon/pray.svg" alt="">
+                        <h4>Kebudayaan dan Tradisi Bali</h4>
+                        <p>Unsur kebudayaan dan tradisi yang masih dipertahankan oleh Masyarakat Bali.</p>
+                    </div> <!-- /box-exc -->
+                    
+                    
+                    <div class="box-exc">
+                        <img src="assets/images/icon/sunset.svg" alt="">
+                        <h4>Spot yang bagus melihat sunset</h4>
+                        <p>Pantai Kuta, Pantai Sanur adalah salah satu spot bagus melihat sunset atau sunrise.</p>
+                    </div> <!-- /box-exc -->
+
+                    <div class="box-exc">
+                        <img src="assets/images/icon/instagram.svg" alt="">
+                        <h4>Instagramable</h4>
+                        <p>Cocok untuk kalian yang gemar posting foto di Instagram.</p>
+                    </div> <!-- /box-exc -->
+
+
+
+                </div> <!-- /excellence-content -->
+
+            </article>
+
+            <article class="bg-contact offset-section wrapper-content" id="kontak">
+                <h4 class="title-small">Kontak Kami</h4>
+                <h2 class="title-head">Ingin bertanya sesuatu?</h2>
+
+                <div class="flex-wrapper">
+
+                    <div class="contact-form">
+                        <form action="" method="post">
+
+                            <div class="box-input">
+                                <h3>Nama Lengkap</h3>
+                                <input type="text" class="contact-input" autocomplete="off" name="nama" placeholder="Nama Lengkap" required>
+                            </div>
+
+                            <div class="box-input">
+                                <h3>Email</h3>
+                                <input type="email" class="contact-input" autocomplete="off" name="email" placeholder="Email Anda" required>
+                            </div>
+
+                            <div class="box-input">
+                                <h3>Pesan Anda</h3>
+                                <textarea name="pesan" class="contact-input" autocomplete="off" required placeholder="Tuliskan pesan anda"></textarea>
+                            </div>
+
+                            <div class="box-input">
+                                <button><i class="fa fa-paper-plane"></i> Kirim Pesan</button>
+                            </div>
+
+                        </form>
+                    </div> <!-- /contact-form -->
+                    
+    
+                    <div class="contact-img">
+                        <img src="assets/images/customer-center.jpg" alt="">
+                    </div> <!-- /contact-img -->
+                    
+
+                </div> <!-- /flex-wrapper -->
+                
+
+            </article> <!-- article /bg-contact -->
+
+
+            <aside class="bg-profile wrapper-content">
+                <h4 class="title-small">Biodata Diri</h4>
+                <h2 class="title-head">Profil singkat tentang saya</h2>
+
+
+                <div class="flex-wrapper">
+
+                    <div class="content-img">
+
+                        <div class="profile-img">
+                            <img src="assets/images/profile.jpg" alt="">
+                        </div>
+
+                    </div> <!-- /content-img -->
+                    
+
+                    <div class="content-text">
+
+                        <h2>Putu Agas Darmawa</h2>
+                        <span class="status">Pelajar/Mahasiswa</span>
+
+                        <div class="label-list">
+                            <ul>
+                                <li>Front-End Developer</li>
+                                <li>UI/UX Designer</li>
+                            </ul>
+                        </div> <!-- /label-list -->
+
+                        <div class="detail-expanded">
+                            <h4 class="head">Informasi Pribadi</h4>
+                            <ul class="pribadi">
+                                <li title="Sekolah"><i class="fa fa-graduation-cap"></i> <span>Lulus di SMK TI Bali Global Denpasar (2020)</span></li>
+                                <li title="Alamat"><i class="fa fa-map-marker-alt" style="transform: translate(3px, 5px);"></i> <span>Jln. Tukad Pancoran Gang. IX No.6</span></li>
+                                <li title="No Telp"><i class="fa fa-phone"></i> <span>081216859542</span></li>
+                                <li title="Email"><i class="fa fa-envelope"></i> <span>agasdarmawa046@gmail.com</span></li>
+                            </ul>
+
+
+                            <h4 class="head">Sosial Media</h4>
+                            <ul class="socmed">
+                                <a target="_blank" href="https://www.instagram.com/agasdarmawa04/">
+                                    <li><i class="fab fa-instagram"></i></li>
+                                </a>
+
+                                <a target="_blank" href="https://www.facebook.com/agas.darmawa">
+                                    <li><i class="fab fa-facebook-f" style="transform: scale(1);"></i></li>
+                                </a>
+
+                                <a target="_blank" href="https://dribbble.com/agasdarmawa">
+                                    <li><i class="fab fa-dribbble"></i></li>
+                                </a>
+
+                                <a target="_blank" href="https://github.com/agasdarmawa">
+                                    <li><i class="fab fa-github"></i></li>
+                                </a>
+
+                            </ul>
+                        </div>
+
+                        <!-- <button id="toggleProfileBtn">Tampilkan Sedikit Profile</button> -->
+
+
+                    </div> <!-- /content-text -->
+
+                </div> <!-- /flex-wrapper -->
+                
+
+            </aside> <!-- /aside -->
+            
+
+
+        </div> <!-- #content -->
+    </main>
+    <!-- Main -->
+
+
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Dicoding Submission by <span class="bold-author">Putu Agas Darmawa</span></p>
+    </footer>
+
+    
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/settings.js"></script>
+
+</body>
+</html>
+
+<!-- 
+    Credits:
+        icon: https://www.flaticon.com/
+        artikel: Google
+        gambar: https://www.pexels.com/
+        fonts: Google Fonts
+ -->
