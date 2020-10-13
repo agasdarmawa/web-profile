@@ -614,13 +614,13 @@ $.each(dataWeb, (index, value) => {
 					<div class="project-img img-proj-adj">
 						
 						<div class="project-action">
-							<a href="${value.link}" style="display:${
+							<a href="${value.link}" target="blank" style="display:${
     value.isPublic == true ? "flex" : "none"
   }" class="href-visit-website">
 								<button class="btn1"><i class="fa fa-globe"></i> Kunjungi Website</button>
 							</a>
 
-							<a href="detail.html?id_website=${value.id}" class="href-detail-website">
+							<a href="detail.html?id_website=${value.id}" target="blank" class="href-detail-website">
 								<button class="btn2"><i class="fa fa-eye"></i> Detail Website</button>
 							</a>
 						</div>
