@@ -761,7 +761,7 @@ const dataTestimonies = [
   },
   {
     name: "Amrita Pancajania",
-    image: "dayu.jpg",
+    image: "dayu2.jpg",
     occupation: "Model",
     comments:
       "Sudah 2 tahun menjadi client, Agas ini orangnya baik, rajin, ramah dan bisa diandalkan. Hasil kerjanya pun keren dan memuaskan.",
