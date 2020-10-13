@@ -523,7 +523,7 @@ const dataWeb = [
     tools: "sublime-vscode-xd-ps",
     description:
       "Baliku adalah sebuah design website travelling yang menampilkan daftar-daftar tempat pariwisata di Bali. Di website ini terdapat konten keunggulan-keunggulan kenapa harus mengunjungi Bali dan beberapa testimoni dari orang-orang yang telah menggunakan jasa web ini. Web ini adalah BETA dan dalam proses development.",
-    public: true,
+    isPublic: true,
   },
 
   {
@@ -536,7 +536,7 @@ const dataWeb = [
     tools: "sublime-vscode-xd-ps",
     description:
       "Souvernice adalah sebuah website yang dibuat untuk Lomba ITCC Web Design 2019 dimana lomba ini diselenggarakan di Universitas Udayana Jimbaran pada Oktober 2019. Tema yang diangkat adalah E-Commerce Kerajinan Tradisional. Jadi, saya memilih produk kerajinan seperti furniture, gelas dan lain-lain sebagai konten web ini.",
-    public: true,
+    isPublic: true,
   },
 
   {
@@ -549,7 +549,7 @@ const dataWeb = [
     tools: "sublime-vscode-ps-bs-mysql-xampp",
     description:
       "Potmefarm adalah sebuah projek website e-commerce oleh Globaliti Creative Center (GCC) yang beranggotakan 2 orang yaitu Putu Agas Darmawa (Front-End) dan Adrian (Back-End). Tema web ini adalah web commerce jual-beli produk berkebun dan juga paket untuk belajar cara berkebun. Client kami adalah seorang pemilik toko yang menjual produk-produk untuk berkebun.",
-    public: false,
+    isPublic: false,
   },
 
   {
@@ -562,7 +562,7 @@ const dataWeb = [
     tools: "sublime-vscode-xd-ps",
     description:
       "Crafter adalah sebuah website yang dibuat untuk Lomba INVENTION Web Design 2019 dimana pada babak penyisihan diadakan secara online pada Maret 2019 dan jika lolos maka finalnya diselenggarakan di Universitas Udayana Jimbaran pada April 2019 secara offline dan web ini berhasil lolos ke babak final. Tema yang diangkat adalah E-Commerce Kerajinan Tangan. Jadi, saya memilih produk kerajinan seperti furniture, baju, gelang dan lain-lain sebagai konten web ini.",
-    public: true,
+    isPublic: true,
   },
 
   {
@@ -575,7 +575,19 @@ const dataWeb = [
     tools: "sublime-vscode-ps",
     description:
       'Dicoding, merupakan sebuah program yang berjalan dalam bidang pengembangan aplikasi, serta memiliki banyak kelas "Dicoding Academy", dan dapat dipelajari dengan system pembelajaran online. Dari tingkat keahlian, tersedia kelas bagi peserta yang dengan kemampuan programming pemula (beginner), pertengahan, hingga mahir (advance atau expert). Dicoding menyediakan dua jenis sertifikat yaitu Sertifikat Keikutsertaan dan Sertifikat Kelulusan. Developer akan mendapatkan Sertifikat Keikutsertaan apabila hadir dalam salah satu event yang Dicoding adakan. Peserta mendapat sertifikat kelulusan setelah menyelesaikan dan lulus dari tugas (submission) akhir dengan baik. Web ini adalah submission dari kelas Dasar Pemrograman Web.',
-    public: true,
+    isPublic: true,
+  },
+  {
+    id: 6,
+    name: "DEON",
+    title: "Web E-Commerce",
+    link: "",
+    image: "deon.jpg",
+    langUsed: "html-css-js-php",
+    tools: "sublime-vscode-ps-bs-mysql-xampp",
+    description:
+      "Designing Online (DEON) adalah sebuah website marketplace untuk menghubungkan designer dan client yang dibuat oleh tim developer DEON termasuk saya dan rekan-rekan saya.",
+    isPublic: false,
   },
 ];
 
@@ -603,7 +615,7 @@ $.each(dataWeb, (index, value) => {
 						
 						<div class="project-action">
 							<a href="${value.link}" style="display:${
-    value.public == true ? "flex" : "none"
+    value.isPublic == true ? "flex" : "none"
   }" class="href-visit-website">
 								<button class="btn1"><i class="fa fa-globe"></i> Kunjungi Website</button>
 							</a>
@@ -637,53 +649,53 @@ $.each(dataWeb, (index, value) => {
 
     // $('.bg-banner-detail').css({'background-image':`url(img/portfolio/${value.image})`});
 
-    // console.log(value.public)
-    if (value.public == false) {
+    // console.log(value.isPublic)
+    if (value.isPublic == false) {
       $(".btn-action").css("display", "none");
     }
 
     // cek bahasa web
     if (value.langUsed == "html-css-js") {
       listLanguage += `
-                        <li><img src="img/skills/html5.png" alt="HTML"></li>
-                        <li><img src="img/skills/css.png" alt="CSS"></li>
-                        <li><img src="img/skills/js.png" alt="Javascript"></li>
-                        `;
+        <li><img src="img/skills/html5.png" alt="HTML"></li>
+        <li><img src="img/skills/css.png" alt="CSS"></li>
+        <li><img src="img/skills/js.png" alt="Javascript"></li>
+        `;
     }
     if (value.langUsed == "html-css-js-php") {
       listLanguage += `
-                        <li><img src="img/skills/html5.png" alt="HTML"></li>
-                        <li><img src="img/skills/css.png" alt="CSS"></li>
-                        <li><img src="img/skills/js.png" alt="Javascript"></li>
-                        <li><img src="img/skills/php.png" alt="PHP"></li>
-                        `;
+        <li><img src="img/skills/html5.png" alt="HTML"></li>
+        <li><img src="img/skills/css.png" alt="CSS"></li>
+        <li><img src="img/skills/js.png" alt="Javascript"></li>
+        <li><img src="img/skills/php.png" alt="PHP"></li>
+        `;
     }
 
     // cek tools web
     if (value.tools == "sublime-vscode-xd-ps") {
       listTools += `
-                        <li><img src="img/tools/sublime.png" alt="Sublime Text"></li>
-                        <li><img src="img/tools/vscode.png" alt="Visual Studio Code"></li>
-                        <li><img src="img/skills/xd.png" alt="Adobe XD"></li>
-                        <li><img src="img/skills/photoshop.png" alt="Photoshop"></li>
-                        `;
+        <li><img src="img/tools/sublime.png" alt="Sublime Text"></li>
+        <li><img src="img/tools/vscode.png" alt="Visual Studio Code"></li>
+        <li><img src="img/skills/xd.png" alt="Adobe XD"></li>
+        <li><img src="img/skills/photoshop.png" alt="Photoshop"></li>
+        `;
     }
     if (value.tools == "sublime-vscode-ps") {
       listTools += `
-                        <li><img src="img/tools/sublime.png" alt="Sublime Text"></li>
-                        <li><img src="img/tools/vscode.png" alt="Visual Studio Code"></li>
-                        <li><img src="img/skills/xd.png" alt="Adobe XD"></li>
-                        `;
+        <li><img src="img/tools/sublime.png" alt="Sublime Text"></li>
+        <li><img src="img/tools/vscode.png" alt="Visual Studio Code"></li>
+        <li><img src="img/skills/xd.png" alt="Adobe XD"></li>
+        `;
     }
     if (value.tools == "sublime-vscode-ps-bs-mysql-xampp") {
       listTools += `
-                        <li><img src="img/tools/sublime.png" alt="Sublime Text"></li>
-                        <li><img src="img/tools/vscode.png" alt="Visual Studio Code"></li>
-                        <li><img src="img/skills/photoshop.png" alt="Photoshop"></li>
-                        <li><img src="img/tools/bootstrap.png" alt="Bootstrap"></li>
-                        <li><img src="img/tools/mysql.png" alt="MySQL"></li>
-                        <li><img src="img/tools/xampp.png" alt="XAMPP"></li>
-                        `;
+        <li><img src="img/tools/sublime.png" alt="Sublime Text"></li>
+        <li><img src="img/tools/vscode.png" alt="Visual Studio Code"></li>
+        <li><img src="img/skills/photoshop.png" alt="Photoshop"></li>
+        <li><img src="img/tools/bootstrap.png" alt="Bootstrap"></li>
+        <li><img src="img/tools/mysql.png" alt="MySQL"></li>
+        <li><img src="img/tools/xampp.png" alt="XAMPP"></li>
+        `;
     }
 
     $("#webLang").html(listLanguage);
@@ -713,10 +725,11 @@ $(".btn-copy").click(function () {
   checkCopied = true;
 
   if (checkCopied == true) {
-    toastr.success("Berhasil disalin ke clipboard!", "Copied!");
+    toastr.success("URL Web berhasil disalin ke clipboard!", "Copied!");
   }
 });
 
+// testimoni hanya karangan semata
 const dataTestimonies = [
   {
     name: "Komang Krisnanda",
@@ -730,7 +743,21 @@ const dataTestimonies = [
     image: "anindya.jpg",
     occupation: "Musisi Bali",
     comments:
-      "Komunikasinya bagus, tugas yang dikerjakan selalu sesuai deadline dan hasilnya pun memuaskan. Pokoknya rekomen banget deh.",
+      "Komunikasinya bagus, tugas yang dikerjakan selalu sesuai deadline dan hasilnya pun memuaskan. Pokoknya rekomen banget deh dan kak Agas ini orangnya baik hehe.",
+  },
+  {
+    name: "Envi Bagus",
+    image: "envi.jpg",
+    occupation: "Web Designer",
+    comments:
+      "Agas ini waktu di SMK orangnya ramah, dulu pernah lomba bareng dan sekarang sekampus ikut Progress pula haha.",
+  },
+  {
+    name: "Adrian",
+    image: "adrian.jpg",
+    occupation: "Back-End Developer",
+    comments:
+      "Selama bekerja bareng dengan Agas, hasil kerjanya bagus dan ide-ide yang dia punya cukup kreatif. Partner kerja yang mantap lah pokoknya ini.",
   },
   {
     name: "Amrita Pancajania",
@@ -745,20 +772,13 @@ const dataTestimonies = [
     occupation: "Photographer",
     comments:
       "Partner kerja yang mantul dah ini. Kalau ada tugas pasti langsung dikerjakan dan hasil design nya juga bagus dan rapi. Senang bisa bekerja bareng dengan Agas.",
-  },
-  {
-    name: "Titah Anamika",
-    image: "titah.jpg",
-    occupation: "Videographer",
-    comments:
-      "Selama bekerja bareng dengan Agas, hasil kerjanya bagus dan ide-ide yang dia punya cukup kreatif. Partner kerja yang mantap lah pokoknya ini.",
-  },
+  }
 ];
 
 let elemDataTesti = [];
 let elemTesti = "";
 
-dataTestimonies.forEach(testi => {
+dataTestimonies.map(testi => {
   elemTesti += `
     <div class="col-lg-6 box-testi slick-slide slick-current slick-active slick-center">
         <div>
@@ -789,3 +809,10 @@ dataTestimonies.forEach(testi => {
 $('#sliderTesti').html(elemTesti)
 
 // console.log(elemDataTesti)
+
+
+$.each($('.box-project'), (index, elems) =>{
+  $(`.box-project:nth-child(${index+1}) .project-img`).css({
+    'background-image':`url(img/portfolio/${dataWeb[index].image})`
+  })
+})

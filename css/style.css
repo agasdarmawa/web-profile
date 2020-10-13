@@ -337,7 +337,7 @@ h2.title-sect::after{
 
 .bg-about .desc-about h3{font-size: 1.3em;margin-bottom: 15px;}
 
-.bg-about .desc-about p{font-size: 1.1em;line-height: 1.4;color: var(--para-color); margin-bottom: 40px;}
+.bg-about .desc-about p{font-size: 1.1em;line-height: 1.7;color: var(--para-color); margin-bottom: 40px;}
 
 
 .desc-about .list-skills{
@@ -993,8 +993,6 @@ footer ul li:nth-child(5) i:hover{color: #ea4c89;}
 }
 
 
-
-
 @media (min-width: 769px) and (max-width: 991px){
     .bg-banner{grid-template-columns: 2fr 1fr;}
     .bg-header-menu{padding: 2em 3em;}
@@ -1030,8 +1028,6 @@ footer ul li:nth-child(5) i:hover{color: #ea4c89;}
 }
 
 
-
-
 @media (min-width: 992px) and (max-width: 1200px){
 	.banner-img .img-box{background-position: -150px -0px;}
 	.wrapper-list-exp .box-exp-list:nth-child(1),
@@ -1047,10 +1043,6 @@ footer ul li:nth-child(5) i:hover{color: #ea4c89;}
 		grid-template-rows: minmax(300px, auto);	
 	}
 }
-
-
-
-
 
 
 /* Slick  */
@@ -1084,7 +1076,9 @@ footer ul li:nth-child(5) i:hover{color: #ea4c89;}
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2); }
 
 .testimonials .slick-track .slick-slide:not(.slick-active) {
-    opacity: 0.5; }
+	opacity: 0.5;
+	/* transform: scale(.97); */
+}
 
 .testimonials .slick-prev:before, .testimonials .slick-next:before {
     font-family: 'Font Awesome 5 Free';
