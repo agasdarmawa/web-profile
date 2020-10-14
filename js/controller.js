@@ -750,7 +750,7 @@ const dataTestimonies = [
     image: "envi.jpg",
     occupation: "Web Designer",
     comments:
-      "Agas ini hasil kerjanya bagus dan ide-idenya kreatif. Mantap lah seneng juga bisa kolab bareng Agas.",
+      "Agas ini hasil kerjanya bagus dan ide-idenya kreatif. Mantap lah dan seneng juga bisa kolab bareng Agas.",
   },
   {
     name: "Adrian",
