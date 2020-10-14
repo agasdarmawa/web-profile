@@ -750,7 +750,7 @@ const dataTestimonies = [
     image: "envi.jpg",
     occupation: "Web Designer",
     comments:
-      "Agas ini waktu di SMK orangnya ramah, dulu pernah lomba bareng dan sekarang sekampus ikut Progress pula haha.",
+      "Agas ini hasil kerjanya bagus dan ide-idenya kreatif. Mantap lah seneng juga bisa kolab bareng Agas.",
   },
   {
     name: "Adrian",
