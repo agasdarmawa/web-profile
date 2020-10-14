@@ -580,7 +580,7 @@ const dataWeb = [
   {
     id: 6,
     name: "DEON",
-    title: "Web E-Commerce",
+    title: "Web Marketplace",
     link: "",
     image: "deon.jpg",
     langUsed: "html-css-js-php",
